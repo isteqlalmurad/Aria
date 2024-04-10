@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap');
+
+
+
+.content-container {
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(45deg, #EDB525, #dab454, #f8b712(344 24% 0% / 0.746));
+    height: 100vh;
+    margin: 0;
+    background-size: 600% 400%;
+    animation: gradient 15s ease infinite;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+
+}
+
+
+
+.custom-btn {
+    background-color: rgb(106, 199, 248);
+    color: #333;
+
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+.custom-btn:hover {
+    background-color: #FF3D70;
+    color: white;
+}
+
+
+.custom-btn-container {
+    display: flex;
+    gap: 20px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(45deg, #7a40a7, #582acd, #2d03ac);
+    font-family: Arial, sans-serif;
+
+}
+
+.user_card {
+    width: 100% !important;
+    max-width: 350px !important;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 58, 93, 0.2),
+
+        0 6px 20px rgba(0, 58, 93, 0.15);
+
+    transition: all 0.3s ease;
+}
+
+.user_card:hover {
+    box-shadow: 0 6px 12px rgba(0, 58, 93, 0.25),
+
+        0 8px 24px rgba(0, 58, 93, 0.2);
+
+    transform: translateY(-5px);
+
+}
+
+
+#form-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    color: #262626;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group-text {
+    background-color: #FF3D70;
+    color: white;
+    border: none;
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.form-control {
+    border-left: none;
+    box-shadow: none;
+    border-color: #FF3D70;
+    transition: border-color 0.2s;
+}
+
+.form-control:focus {
+    border-color: #FF6A88;
+    outline: none;
+    box-shadow: none;
+}
+
+.form-control::placeholder {
+    color: #555;
+    opacity: 0.7;
+}
+
+.login_btn {
+    width: 100%;
+    background-color: #1e72e0 !important;
+    color: white !important;
+    box-shadow: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.login_btn:hover {
+    background-color: #2f5498 !important;
+}
+
+.links a {
+    color: #2172ff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.links a:hover {
+    color: #FF6A88;
+}
+
+/*-----------------------------------from loging page local html css files------------------------*/
+
+/* General style for all messages */
+.messages {
+    margin: 20px 0;
+    padding: 0;
+    list-style-type: none;
+    /* Removing bullet points */
+}
+
+.messages li {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+}
+
+.messages .info {
+    background-color: #6e0707;
+
+    color: #fff;
+}
+
+.messages .info:hover {
+    background-color: #FF8A7C;
+
+}
+
+/* Warning */
+.messages .warning {
+    background-color: #750118;
+    color: #fff;
+}
+
+.messages .warning:hover {
+    background-color: #FF5978;
+
+}
+
+/* Error */
+.messages .error {
+    background-color: #5d0318;
+
+    color: #fff;
+}
+
+.messages .error:hover {
+    background-color: #FF2D60;
+
+}
+
+/* Success */
+.messages .success {
+    background-color: #7EED92;
+
+    color: #2E592F;
+
+}
+
+.messages .success:hover {
+    background-color: #6EDC82;
+
+}

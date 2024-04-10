@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Confirmation</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #f0f4f8;
+            /* Soft background color */
+            font-family: Arial, sans-serif;
+            /* Elegant font */
+        }
+
+        .circle-logo {
+            width: 100px;
+            /* Adjust based on your logo size */
+            height: 100px;
+            /* Adjust based on your logo size */
+            border-radius: 50%;
+            /* Creates the circle shape */
+            background: #fff;
+            /* Logo background color */
+            margin: 0 auto 20px;
+            /* Centers the logo and adds space below */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            /* Ensures the image does not spill outside the circle */
+        }
+
+        .circle-logo img {
+            width: 100%;
+            /* Makes the image fully occupy the div */
+            height: auto;
+            /* Keeps the image aspect ratio intact */
+            /* Adjusts the image's position to be centered if it's not square */
+            display: block;
+            object-fit: cover;
+            /* Covers the div area, useful if the image aspect ratio doesn't match */
+        }
+
+        .message {
+            font-size: 28px;
+            /* Adjust based on your preference */
+            color: #333;
+            /* Text color */
+            padding: 10 20px;
+
+            position: center;
+            /* Adds padding on the sides */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="circle-logo">
+            <!-- If using an img tag for the logo -->
+            <img src="{% static 'website/Aria_logo.png' %}" alt="Logo">
+        </div>
+        <div class="message">
+            Thanks for subscribing! You will be notified when Aria is ready!
+            🌸
+
+        </div>
+    </div>
+
+</body>
+
+</html>

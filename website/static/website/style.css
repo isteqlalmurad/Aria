@@ -1,0 +1,126 @@
+/* style.css */
+body {
+    background-color: #004081;
+    /* A soft, pastel green background */
+    color: #333;
+}
+
+.glossy-nav {
+    background-image: linear-gradient(to right, #f2f2f2, #ffffff);
+    box-shadow: 0 8px 6px -6px #ffbcfb;
+    font: #000000;
+}
+
+.glossy-button {
+    border: none;
+    background-image: linear-gradient(to right, #637de8, #2a61ba 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-radius: 3% !important;
+    width: 100% !important;
+}
+
+.glossy-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+.oval-input {
+    border-radius: 30px;
+    /* Adjust for a more oval shape if needed */
+    padding: 20px 40px;
+    /* Top and bottom padding + Left and right padding */
+    width: 100x;
+    /* Adjust based on the container or use a specific width */
+    max-width: 100%;
+    /* Ensures it doesn't stretch beyond its container */
+    display: block;
+    /* Makes it easier to control width */
+    margin: 0 auto;
+    /* Center align if you have a specific width */
+}
+
+.circle-logo {
+    width: 40px;
+    /* Adjust based on your logo size */
+    height: 40px;
+    /* Adjust based on your logo size */
+    border-radius: 50%;
+    /* Creates the circle shape */
+    background: #fff;
+    /* Logo background color */
+    margin: 0 auto -5px;
+    /* Centers the logo and adds space below */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* Ensures the image does not spill outside the circle */
+}
+
+.circle-logo img {
+    width: 100%;
+    /* Makes the image fully occupy the div */
+    height: auto;
+    /* Keeps the image aspect ratio intact */
+    /* Adjusts the image's position to be centered if it's not square */
+    display: block;
+    object-fit: cover;
+    /* Covers the div area, useful if the image aspect ratio doesn't match */
+}
+
+.full-width-image {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Shadow effect */
+}
+
+/* Override Bootstrap Navbar Link Colors */
+.navbar-light .navbar-nav .nav-link {
+    color: #000000 !important;
+    /* Dark blue color; change this to your desired color */
+}
+
+/* Change color on hover */
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #777777 !important;
+    /* Lighter blue on hover; adjust as needed */
+}
+
+.container {
+    margin-top: -200px;
+    /* Pulls the container closer to the elements above it */
+}
+
+#demo-button {
+
+
+
+    cursor: pointer;
+    /* Change cursor to indicate clickable */
+    transition: transform 0.2s ease;
+    /* Smooth transition for click effect */
+}
+
+#demo-button:hover {
+    filter: brightness(85%);
+    /* Darken image on hover */
+}
+
+#demo-button:active {
+    transform: scale(0.95);
+    /* Simulate click by scaling down */
+}
+
+#demo-button img {
+    width: 200px;
+    /* Adjust width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+}
+
+
+
+/* shifting the button and email list contents*/

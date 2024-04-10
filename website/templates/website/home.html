@@ -1,0 +1,93 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindAnchor</title>
+    <link href="{% static 'website/style.css' %}" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light glossy-nav">
+        <a class="navbar-brand" href="#">
+            <div class="circle-logo">
+                <!-- If using an img tag for the logo -->
+                <img src="{% static 'website/Aria_logo.png' %}" alt="Logo">
+            </div>
+        </a>
+        <a class="navbar-brand" href="#">MindAnchor⚓ </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profile</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="image-container">
+        <img src="{% static 'website/landing_pic1.gif' %}" alt="Banner" class="full-width-image">
+    </div>
+
+    <div class="image-container">
+        <img src="{% static 'website/landing_pic3.gif' %}" alt="Banner" class="full-width-image">
+    </div>
+
+    <div class="image-container">
+        <img src="{% static 'website/landing_pic2.gif' %}" alt="Banner" class="full-width-image">
+    </div>
+
+    <!-- Demo Button -->
+
+
+    <div class="container">
+
+
+        <div class="row justify-content-start ">
+            <div class="col-7"> <!-- Adjust the col size as needed -->
+                <!-- Subscription Form -->
+                <form action="{% url 'subscribe' %}" method="post" class="text-center">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control oval-input" placeholder="Enter your email"
+                            required>
+                    </div>
+                    <button type="submit" class="btn btn-primary glossy-button mb-3">Subscribe to our waiting
+                        list</button>
+                </form>
+
+                <a id="demo-button" href="javascript:void(0);">
+                    <img src="{% static 'website/demo_button.png' %}" alt="Demo Button" />
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="{% static 'website/script.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
